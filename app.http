@@ -1,0 +1,64 @@
+POST http://localhost:3000/users/signup
+Content-Type: application/json
+
+{
+    "username" : "Geetha",
+    "name" : "GeethaA",
+    "password" : "Geetha@123",
+    "phonenumber" : 9876543219,
+    "gender" : "Female",
+    "location" : "Mumbai"
+}
+
+### login api
+POST http://localhost:3000/login
+Content-Type: application/json
+
+{
+    "username" : "Geetha",
+    "password" : "Geetha@123"
+}
+
+###get notes
+GET http://localhost:3000/notes
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6IkdlZXRoYSIsImlhdCI6MTcyMTMyOTMzMn0.E9t67dGDtnvfeF5y0roVn8rG2FxTA3_n-5FY8a6Pbfg 
+
+### get a specific note with
+GET http://localhost:3000/notes/1
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6IkdlZXRoYSIsImlhdCI6MTcyMTMyOTMzMn0.E9t67dGDtnvfeF5y0roVn8rG2FxTA3_n-5FY8a6Pbfg
+
+### create note
+POST http://localhost:3000/notes/1
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6IkdlZXRoYSIsImlhdCI6MTcyMTMyOTMzMn0.E9t67dGDtnvfeF5y0roVn8rG2FxTA3_n-5FY8a6Pbfg
+
+### update note
+PUT http://localhost:3000/notes/1
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6IkdlZXRoYSIsImlhdCI6MTcyMTMyOTMzMn0.E9t67dGDtnvfeF5y0roVn8rG2FxTA3_n-5FY8a6Pbfg
+
+### delete note
+DELETE http://localhost:3000/notes/1
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6IkdlZXRoYSIsImlhdCI6MTcyMTMyOTMzMn0.E9t67dGDtnvfeF5y0roVn8rG2FxTA3_n-5FY8a6Pbfg
+
+### get tags
+GEt http://localhost:3000/tags/
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6IkdlZXRoYSIsImlhdCI6MTcyMTMyOTMzMn0.E9t67dGDtnvfeF5y0roVn8rG2FxTA3_n-5FY8a6Pbfg
+
+
+### get a specific tag
+GET http://localhost:3000/tags/1
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6IkdlZXRoYSIsImlhdCI6MTcyMTMyOTMzMn0.E9t67dGDtnvfeF5y0roVn8rG2FxTA3_n-5FY8a6Pbfg
+
+
+### create tag 
+POST http://localhost:3000/tags
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6IkdlZXRoYSIsImlhdCI6MTcyMTMyOTMzMn0.E9t67dGDtnvfeF5y0roVn8rG2FxTA3_n-5FY8a6Pbfg
+
+
+### update tag
+PUT http://localhost:3000/tags/1
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6IkdlZXRoYSIsImlhdCI6MTcyMTMyOTMzMn0.E9t67dGDtnvfeF5y0roVn8rG2FxTA3_n-5FY8a6Pbfg
+
+
+### delete tag 
+DELETE http://localhost:3000/tags/1
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6IkdlZXRoYSIsImlhdCI6MTcyMTMyOTMzMn0.E9t67dGDtnvfeF5y0roVn8rG2FxTA3_n-5FY8a6Pbfg
